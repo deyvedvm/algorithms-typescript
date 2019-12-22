@@ -3,8 +3,11 @@ import StringsUtils from '../strings/strings.utils';
 describe('Strings Utils Test', () => {
     let stringUtils: StringsUtils;
 
-    beforeEach(() => {
+    beforeAll(() => {
         stringUtils = new StringsUtils();
+    });
+
+    beforeEach(() => {
     });
 
     afterEach(async () => {

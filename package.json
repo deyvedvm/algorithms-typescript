@@ -4,7 +4,9 @@
   "description": "Project to store algorithms in TypeScript",
   "main": "src/index.ts",
   "scripts": {
-    "start": "",
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc -p .",
     "test": "jest"
   },
   "repository": {
@@ -24,9 +26,10 @@
   "homepage": "https://github.com/deyvedvm/algorithms-typescript#readme",
   "devDependencies": {
     "@types/jest": "^24.0.24",
-    "@types/node": "^12.12.21",
+    "@types/node": "^12.12.22",
     "jest": "^24.9.0",
     "ts-jest": "^24.2.0",
+    "ts-node": "^8.5.4",
     "typescript": "^3.7.4"
   },
   "dependencies": {}

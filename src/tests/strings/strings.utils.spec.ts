@@ -1,4 +1,4 @@
-import StringsUtils from '../strings/strings.utils';
+import StringsUtils from '../../strings/strings.utils';
 
 describe('Strings Utils Test', () => {
     let stringUtils: StringsUtils;
@@ -13,7 +13,7 @@ describe('Strings Utils Test', () => {
     afterEach(async () => {
     });
 
-    it('Should check if word is palindrome', async () => {
+    it('isPalindrome ; should check if word is palindrome ; return boolean', async () => {
         const mockString = 'madam';
 
         const palindrome = stringUtils.isPalindrome(mockString);

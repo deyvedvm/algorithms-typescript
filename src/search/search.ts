@@ -19,6 +19,6 @@ export class Search {
             }
         }
 
-        return 0;
+        return -1;
     }
 }

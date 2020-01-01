@@ -27,4 +27,13 @@ describe('Search Test', () => {
 
         expect(result).toBe(3);
     });
+
+    it('binarySearch ; should check if element is not in array  ; return -1', () => {
+        const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+        const sortedColors = colors.sort();
+
+        const redIndex = search.binarySearch(sortedColors, 'black');
+
+        expect(redIndex).toBe(-1);
+    });
 });

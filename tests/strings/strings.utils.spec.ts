@@ -1,4 +1,4 @@
-import StringsUtils from '../../strings/strings.utils';
+import StringsUtils from '../../src/strings/strings.utils';
 
 describe('Strings Utils Test', () => {
     let stringUtils: StringsUtils;

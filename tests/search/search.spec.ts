@@ -1,4 +1,4 @@
-import {Search} from "../../search/search";
+import {Search} from "../../src/search/search";
 
 describe('Search Test', () => {
     let search: Search;

@@ -3,7 +3,7 @@ export class Search {
     constructor() {
     }
 
-    binarySearch<T>(sortedArray: T[], element: T): number {
+    static binarySearch<T>(sortedArray: T[], element: T): number {
         let lowIndex = 0;
         let highIndex = sortedArray.length - 1;
 

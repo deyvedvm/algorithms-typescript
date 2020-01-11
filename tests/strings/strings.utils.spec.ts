@@ -1,10 +1,8 @@
 import StringsUtils from '../../src/strings/strings.utils';
 
 describe('Strings Utils Test', () => {
-    let stringUtils: StringsUtils;
 
     beforeAll(() => {
-        stringUtils = new StringsUtils();
     });
 
     beforeEach(() => {
@@ -13,11 +11,19 @@ describe('Strings Utils Test', () => {
     afterEach(async () => {
     });
 
-    it('isPalindrome ; should check if word is palindrome ; return boolean', async () => {
+    it('isPalindrome ; should check if word is palindrome ; return true', async () => {
         const mockString = 'madam';
 
-        const palindrome = stringUtils.isPalindrome(mockString);
+        const palindrome = StringsUtils.isPalindrome(mockString);
 
         expect(palindrome).toBeTruthy();
+    });
+
+    it('isPalindrome ; should check if word is not palindrome ; return false', async () => {
+        const mockString = 'geeks';
+
+        const palindrome = StringsUtils.isPalindrome(mockString);
+
+        expect(palindrome).toBeFalsy();
     });
 });

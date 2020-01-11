@@ -1,18 +1,16 @@
 import {Search} from "../../src/search/search";
 
 describe('Search Test', () => {
-    let search: Search;
 
     beforeAll(() => {
-        search = new Search();
     });
 
     it('binarySearch ; should test with array of strings ; return index', () => {
         const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
         const sortedColors = colors.sort();
 
-        const greenIndex = search.binarySearch(sortedColors, 'green');
-        const redIndex = search.binarySearch(sortedColors, 'red');
+        const greenIndex = Search.binarySearch(sortedColors, 'green');
+        const redIndex = Search.binarySearch(sortedColors, 'red');
 
         expect(greenIndex).toBe(1);
         expect(redIndex).toBe(4);
@@ -23,7 +21,7 @@ describe('Search Test', () => {
 
         const sortedNumbers = numbers.sort((a, b) => a - b);
 
-        const result = search.binarySearch(sortedNumbers, 8);
+        const result = Search.binarySearch(sortedNumbers, 8);
 
         expect(result).toBe(3);
     });
@@ -32,7 +30,7 @@ describe('Search Test', () => {
         const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
         const sortedColors = colors.sort();
 
-        const redIndex = search.binarySearch(sortedColors, 'black');
+        const redIndex = Search.binarySearch(sortedColors, 'black');
 
         expect(redIndex).toBe(-1);
     });

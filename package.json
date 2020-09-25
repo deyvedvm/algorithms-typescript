@@ -25,12 +25,12 @@
   },
   "homepage": "https://github.com/deyvedvm/algorithms-typescript#readme",
   "devDependencies": {
-    "@types/jest": "^24.0.24",
-    "@types/node": "^12.12.22",
+    "@types/jest": "^24.9.1",
+    "@types/node": "^12.12.54",
     "jest": "^24.9.0",
-    "ts-jest": "^24.2.0",
-    "ts-node": "^8.5.4",
-    "typescript": "^3.7.4"
+    "ts-jest": "^24.3.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
   },
   "dependencies": {}
 }

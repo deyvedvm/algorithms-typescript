@@ -1,17 +1,8 @@
-import {Lesson} from "./interfaces/lessons";
-
 export default class StringsUtils {
 
     static isPalindrome(str: string): boolean {
 
         return str.split('').reverse().join('') === str;
-    }
-
-    static oddLessons(lessons: Lesson[]) {
-
-        return lessons.filter(lesson => {
-            return lesson.startMinute % 2 !== 0
-        })
     }
 
     static numbersOfWorlds(str: string) {

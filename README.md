@@ -1,22 +1,28 @@
 # Algorithms in TypeScript
 
 ```markdown
+src
+.
+├── data-structures
+│   └── stack.ts
 ├── index.ts
+├── interfaces
 ├── search
 │   └── search.ts
-├── sequences
-│   └── sequences.ts
-├── stacks
-├── strings
-│   └── strings.utils.ts
-└── tests
-    ├── search
-    │   └── search.spec.ts
-    ├── sequences
-    │   └── sequences.spec.ts
-    ├── stacks
-    └── strings
-        └── strings.utils.spec.ts
+└── strings
+└── strings.utils.ts
 
-9 directories, 7 files
+4 directories, 4 files
+
+tests
+.
+├── data-structures
+│   └── stack.spec.ts
+├── search
+│   └── search.spec.ts
+└── strings
+└── strings.utils.spec.ts
+
+3 directories, 3 files
+
 ``` 
